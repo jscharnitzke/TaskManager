@@ -12,6 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.taskmanager.ui.theme.TaskManagerTheme
 
@@ -56,7 +57,7 @@ fun ContentBody(modifier: Modifier = Modifier) {
 fun PraiseText(modifier: Modifier = Modifier) {
     Text(
         modifier = modifier,
-        text = "Nice work!",
+        text = stringResource(R.string.praise_text),
     )
 }
 
@@ -64,7 +65,7 @@ fun PraiseText(modifier: Modifier = Modifier) {
 fun TasksRemainingText(modifier: Modifier = Modifier) {
     Text(
         modifier = modifier,
-        text = "All tasks completed",
+        text = stringResource(R.string.tasks_remaining_text),
     )
 }
 
