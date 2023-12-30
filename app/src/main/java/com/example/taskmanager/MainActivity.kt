@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    TasksRemainingText()
                 }
             }
         }
@@ -30,17 +30,17 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun TasksRemainingText(modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
-        modifier = modifier
+        modifier = modifier,
+        text = "All tasks completed",
     )
 }
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun TaskManagerPreview() {
     TaskManagerTheme {
-        Greeting("Android")
+        TasksRemainingText()
     }
 }
